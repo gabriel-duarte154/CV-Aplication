@@ -4,11 +4,9 @@ import viteSvgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/CV-Aplication/',
   plugins: [react(), viteSvgr()],
   build: {
     rollupOptions: {
-      input: './index.html',
       output: {
         assetFileNames: (assetInfo) => {
           let extType = assetInfo.name.split('.').at(1);
