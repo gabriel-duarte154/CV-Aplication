@@ -16,14 +16,8 @@ const data = {
   experience: [],
 };
 
-function createDocument() {
-  const page = document.implementation.createHTMLDocument('new document');
-
-  console.log(page);
-}
 
 function App() {
-  console.log(document);
   const [formData, setFormData] = useState(data);
   const [preViewData, setPreViewData] = useState(data);
 

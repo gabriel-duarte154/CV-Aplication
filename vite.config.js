@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), viteSvgr()],
   build: {
     rollupOptions: {
-      input: './src/main.jsx',
+      input: './index.html',
       output: {
         assetFileNames: (assetInfo) => {
           let extType = assetInfo.name.split('.').at(1);
